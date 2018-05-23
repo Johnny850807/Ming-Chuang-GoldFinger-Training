@@ -63,8 +63,8 @@ class MingChuanGoldMiner:
                 with open(MingChuanGoldMiner.WORDS_FILE_PATH, 'w+', encoding='utf-8') as f:
                     f.writelines(word + '\n' for word in all_words)
 
-            for i in range(len(sorted_words)):
-                self.word_index_dict[sorted_words[i][0]] = i
+            for i in range(len(all_words)):
+                self.word_index_dict[all_words[i]] = i
 
     def separate_training_data_test_data(self):
         count = self.trains.shape[0]

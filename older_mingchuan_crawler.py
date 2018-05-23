@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 from multiprocessing import Pool
 
 
-
 def parse_date(time):  # 2016-09-05 00:58:56
     return datetime.strptime(time, '%Y-%m-%d %H:%M:%S')
 
@@ -79,4 +78,5 @@ def crawl():
     print("Done!")
 
 
-crawl()
+if __name__ == '__main__':
+    print('舊版金手指已經關站。')
